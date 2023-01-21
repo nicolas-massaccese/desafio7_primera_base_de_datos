@@ -45,8 +45,8 @@ io.on('connection', (socket) => {
         socket.emit('chat', chat);
     });
 
-    socket.on('addProduct', (product) => {
-        chat.push(product);
+    socket.on('addProduct', (prod) => {
+        product.push(prod);
         socket.emit('products', product);
     });
 });
